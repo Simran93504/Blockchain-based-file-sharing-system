@@ -5,7 +5,6 @@ async function main() {
   const upload = await Upload.deploy();
 <<<<<<< HEAD
   const provider = ethers.provider;
-  await provider.send("eth_syncing", []);
 
  
   
