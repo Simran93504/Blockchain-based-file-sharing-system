@@ -3,7 +3,7 @@ import "./Display.css";
 
 const Display = ({ contract, account }) => {
   const [data, setData] = useState("");
-  console.log(data);
+  
 
   const getdata = async () => {
     const Otheraddress = document.querySelector(".address").value;
@@ -45,16 +45,14 @@ const Display = ({ contract, account }) => {
     <>
       <div className="image-list">{data}</div>
       <input type="text" placeholder="Enter Address" className="address"></input>
-  
+
       <button className="center button" onClick={getdata}>
         Get Data
       </button>
     </>
   );
 };
-<<<<<<< HEAD
+
 
 export default Display;
-=======
-export default Display;
->>>>>>> d734102c6856ac2a91abd0baa7ec6561b6e70d52
+
