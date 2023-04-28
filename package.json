@@ -4,8 +4,11 @@
     "hardhat": "^2.12.4"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@enzoferey/ethers-error-parser": "^0.2.3",
     "@ethersproject/providers": "^5.7.2",
+=======
+>>>>>>> d734102c6856ac2a91abd0baa7ec6561b6e70d52
     "axios": "^1.3.5",
     "create-react-app": "^5.0.1",
     "tar": "^6.1.13"
