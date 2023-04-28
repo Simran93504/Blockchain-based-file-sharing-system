@@ -111,7 +111,7 @@ function FileUpload({ contract, provider, account }) {
             },
           });
 
-          const ImgHash = `ipfs://${resFile.data.IpfsHash}`;
+          const ImgHash = `https://gateway.pinata.cloud/ipfs/${resFile.data.IpfsHash}`;
           const signer = contract.connect(provider.getSigner());
           signer.add(account, ImgHash);
           

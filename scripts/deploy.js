@@ -1,14 +1,12 @@
-import { ethers as _ethers } from "hardhat";
+const hre = require("hardhat");
 
 async function main() {
-  const Upload = await _ethers.getContractFactory("Upload");
+  const Upload = await hre.ethers.getContractFactory("Upload");
   const upload = await Upload.deploy();
-
   const provider = ethers.provider;
- 
+  await provider.send("eth_syncing", []);
 
   const network = await provider.getNetwork();
-  await provider.send("eth_syncing", []);
   // console.log(provider);
   console.log(`Latest block number: ${network.blockNumber}`);
   console.log(`Latest block timestamp: ${network.timestamp}`);
@@ -20,6 +18,4 @@ async function main() {
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
-
 });
-
