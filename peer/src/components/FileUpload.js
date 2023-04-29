@@ -17,12 +17,13 @@ const FileUpload = ({ contract, account, provider }) => {
           data: formData,
           headers: {
             pinata_api_key: `
-            a19baf587ff366b87392`,
-            pinata_secret_api_key: `af2e0de369150a84e6b444d7cf307efe246bc4ae5581e2394cc0d57b3d981cea`,
+            4477aed284e844771a4c`,
+            pinata_secret_api_key: `e60c637fbe92e16a1ddbcd0537fbe3e47ff089db9fcde0b4691205b26e00341d`,
             "Content-Type": "multipart/form-data",
           },
         });
         const ImgHash = `ipfs://${resFile.data.IpfsHash}`;
+        
         contract.add(account,ImgHash);
         alert("Successfully Image Uploaded");
         setFileName("No image selected");
