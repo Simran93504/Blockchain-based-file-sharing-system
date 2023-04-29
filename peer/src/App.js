@@ -28,7 +28,14 @@ function App() {
         const signer = provider.getSigner();
         const address = await signer.getAddress();
         setAccount(address);
+<<<<<<< HEAD
         let contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+=======
+        //
+        console.log(address);
+        let contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+
+>>>>>>> eda6023bb9eb2f2d8a92c70e5cfcb46007a554b0
 
         const contract = new ethers.Contract(
           contractAddress,
@@ -69,7 +76,9 @@ function App() {
           provider={provider}
           contract={contract}
         ></FileUpload>
-        <Display contract={contract} account={account}></Display>
+
+        <Display contract={contract} account={account} provider={provider}></Display>
+
       </div>
     </>
   );
