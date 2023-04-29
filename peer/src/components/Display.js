@@ -3,7 +3,7 @@ import "./Display.css";
 const Display = ({ contract, account }) => {
   const [data, setData] = useState("");
   const getdata = async () => {
-    let dataArray;
+    let dataArray = [];
   
     const Otheraddress = document.querySelector(".address").value;
     
@@ -13,6 +13,7 @@ const Display = ({ contract, account }) => {
         dataArray = await contract.display(Otheraddress);
         console.log(dataArray);
       } else {
+        await contract.allow(account);
         dataArray = await contract.display(account);
         console.log(dataArray);
       }
