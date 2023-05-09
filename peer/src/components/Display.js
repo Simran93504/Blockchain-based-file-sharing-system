@@ -43,7 +43,9 @@ const Display = ({ contract, account }) => {
 
   return (
     <>
+      <h2 className="header">No One Can See Except You!</h2>
       <div className="image-list">{data}</div>
+
       <input type="text" placeholder="Enter Address" className="address"></input>
 
       <button className="center button" onClick={getdata}>

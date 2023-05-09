@@ -5,12 +5,18 @@ import FileUpload from "./components/FileUpload";
 import Display from "./components/Display";
 import Modal from "./components/Modal";
 import "./App.css";
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Dancing+Script:wght@500&family=Prompt:wght@300&display=swap');
+</style>
 
 function App() {
   const [account, setAccount] = useState("");
   const [contract, setContract] = useState(null);
   const [provider, setProvider] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
+  const [displayOpen, setDisplayOpen] = useState(false);
+  const [uploadOpen, setUploadOpen] = useState(false);
+  const[home,setHome]=useState(true);
 
   useEffect(() => {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -28,17 +34,13 @@ function App() {
         const signer = provider.getSigner();
         const address = await signer.getAddress();
         setAccount(address);
-        //
-        console.log(address);
         let contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
-
 
         const contract = new ethers.Contract(
           contractAddress,
           Upload.abi,
           signer
         );
-        //console.log(contract);
         setContract(contract);
         setProvider(provider);
       } else {
@@ -47,37 +49,84 @@ function App() {
     };
     provider && loadProvider();
   }, []);
-  return (
-    <>
-      {!modalOpen && (
-        <button className="share" onClick={() => setModalOpen(true)}>
-          Share
-        </button>
-      )}
-      {modalOpen && (
-        <Modal setModalOpen={setModalOpen} contract={contract}></Modal>
-      )}
+  const handleHomeClick = () => {
+    setHome(true);
+    setUploadOpen(false);
+    setDisplayOpen(false);
+    setModalOpen(false);
+  };
+  const handleUploadClick = () => {
+    setHome(false);
+    setUploadOpen(true);
+    setDisplayOpen(false);
+    setModalOpen(false);
+  };
 
-      <div className="App">
-        <h1 style={{ color: "white" }}>Gdrive 3.0</h1>
+  const handleDisplayClick = () => {
+    setHome(false);
+    setDisplayOpen(true);
+    setUploadOpen(false);
+    setModalOpen(false);
+  };
+
+  const handleModalClick = () => {
+    setHome(false);
+    setModalOpen(true);
+    setUploadOpen(false);
+    setDisplayOpen(false);
+  };
+
+  return (
+    <div className="App">
+           <h1 class= "heading" style={{ color: "black"  }}>File Securita</h1>
         <div class="bg"></div>
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
 
-        <p style={{ color: "white" }}>
+        <p class= "account" style={{ color: "white" }}>
           Account : {account ? account : "Not connected"}
         </p>
-        <FileUpload
-          account={account}
-          provider={provider}
-          contract={contract}
-        ></FileUpload>
-
-        <Display contract={contract} account={account} provider={provider}></Display>
-
+      <div className="navbar">
+        <img class = "App-logo" src="https://thumbs.dreamstime.com/b/print-167280049.jpg" alt="Logo" border="0" width="100" height="100" />
+        <button className="navbar-button" onClick={handleHomeClick}>
+          Home
+        </button>
+        <button className="navbar-button" onClick={handleUploadClick}>
+          Upload
+        </button>
+        <button className="navbar-button" onClick={handleDisplayClick}>
+          Display
+        </button>
+        <button className="navbar-button" onClick={handleModalClick}>
+          Share
+        </button>
       </div>
-    </>
+      <div className="content">{renderContent()}</div>
+    </div>
   );
-}
 
+  function renderContent() {
+    if (uploadOpen) {
+      return <FileUpload account={account} provider={provider} contract={contract} setUploadOpen={setUploadOpen} />;
+    } else if (displayOpen) {
+      return <Display contract={contract} account={account} provider={provider} setDisplayOpen={setDisplayOpen} />;
+    } else if (modalOpen) {
+      return <Modal setModalOpen={setModalOpen} contract={contract} />;
+    }
+    else if (home) {
+      return (
+        <div className="home">
+          <p>
+            File Securita is a decentralized file storage application that
+            allows users to upload files to the blockchain. The files are
+            encrypted and stored on the blockchain. The user can then share the
+            file with other users by providing them with the file hash. The
+            other users can then download the file from the blockchain.
+          </p>
+        
+          </div>
+      );
+  }
+  }
+}
 export default App;
