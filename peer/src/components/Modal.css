@@ -1,25 +1,31 @@
 .modalBackground {
-    width: 100vw;
+    /* width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2); */
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+  /* .share-heading{
+    font-size: 40px;
+    color: #9E6F21;
+  } */
   .modalContainer {
     width: 500px;
     height: 200px;
     border-radius: 12px;
-    background-color: white;
+    background-color:#beb59f ;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
-    padding: 25px;
+    padding: 5px;
+    /* left: 10%; */
   }
   
   .modalContainer {
+    margin-left: 50%;
+    margin-top: 10%;
     display: inline-block;
     text-align: center;
   }
@@ -61,7 +67,7 @@
     height: 35px;
     margin: 10px;
     border: none;
-    background-color: cornflowerblue;
+    background-color: #537188;
     color: white;
     border-radius: 8px;
     font-size: 16px;

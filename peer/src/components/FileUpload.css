@@ -5,10 +5,15 @@
   input[type="file"] {
     display: none;
   }
-  
+  .header{
+    font-size: 40px;
+    color: #4d4430;
+    font-family: 'Bruno Ace SC', cursive;
+  }
   .choose {
     background-color: initial;
-    background-image: linear-gradient(-180deg, #5aff15, #00b712);
+    /* background-image: linear-gradient(-180deg, #5aff15, #00b712); */
+    background-color: #537188;
     border-radius: 6px;
     color: #ffffff;
     padding: 5px 10px;
@@ -20,7 +25,7 @@
     box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
   }
   .textArea {
-    color: white;
+    color: rgb(16, 16, 16);
   }
   
   .upload {
@@ -33,8 +38,8 @@
   }
   
   .upload:hover {
-    border: 1px solid #13aa52;
-    background-color: #a5efc1;
+    border: 1px solid #537188;
+    background-color: #537188;
     color: #ffffff;
     padding: 5px 10px;
   }
@@ -43,7 +48,7 @@
   .upload[disabled] {
     border: 1px solid #999999;
     background-color: #cccccc;
-    color: #666666;
+    color: #131212;
   }
   
   div {

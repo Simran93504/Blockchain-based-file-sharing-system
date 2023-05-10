@@ -219,6 +219,7 @@ function FileUpload({ contract, provider, account }) {
   return (
     <div className="top">
       <form className="form" onSubmit={handleSubmit}>
+      <h1 class ="header">Let's Upload Something!</h1>
         <label htmlFor="file-upload" className="choose">
           {/*turn around for avoding choose file */}
           Choose Image
