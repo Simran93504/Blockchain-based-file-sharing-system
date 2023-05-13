@@ -35,7 +35,7 @@ function App() {
         const address = await signer.getAddress();
         setAccount(address);
 
-        let contractAddress = "0x3aCA12034FcE640dc8ffbbbd5e67B2aDb069a026";
+        let contractAddress = "YOUR CONTRACT ADDRTESS";
 
         //
     

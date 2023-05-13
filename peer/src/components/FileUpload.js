@@ -177,8 +177,8 @@ function FileUpload({ contract, provider, account }) {
             url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
             data: formData,
             headers: {
-              pinata_api_key: `06cbb63b94cf005586fa`,
-              pinata_secret_api_key: `1c6b91636d9d58fafecd619b8b87d8261bf6ca347f16893ec9f21655f53acaf6`,
+              pinata_api_key: `YOUR PINATA API KEY`,
+              pinata_secret_api_key: `YOUR PINATA SECRET API KEY`,
               "Content-Type": "multipart/form-data",
             },
           });
