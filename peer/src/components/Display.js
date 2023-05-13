@@ -12,8 +12,8 @@ const Display = ({ contract, account }) => {
       if (Otheraddress) {
         dataArray = await contract.display(Otheraddress);
       } else {
-        await contract.allow(account);
-        dataArray = await contract.display(account);
+        // await contract.allow(account);
+        dataArray = await contract.display(account)
       }
   
       if (dataArray.length > 0) {
@@ -57,4 +57,3 @@ const Display = ({ contract, account }) => {
 
 
 export default Display;
-
