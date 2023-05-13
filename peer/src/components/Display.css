@@ -3,16 +3,28 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 10px;
     grid-auto-rows: 350px;
-  
     margin: 10px;
   }
   
   .image-list img {
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
+    background: #E1D4BB;
+   
+  }
+  .pdf-name{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color:#4d4430;
   }
   .center {
     margin: 40px;
+  }
+  .image-list.pdf-icon{
+    width: 120px;
+    height: 170px;
+   
   }
   
   .button {

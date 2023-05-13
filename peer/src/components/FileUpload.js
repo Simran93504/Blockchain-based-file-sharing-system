@@ -177,16 +177,20 @@ function FileUpload({ contract, provider, account }) {
             url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
             data: formData,
             headers: {
-              pinata_api_key: `55bd98cbf87d7bc68bbf`,
-              pinata_secret_api_key: `fed85ded6ec1ce9822eff86f5948754ffb6f5f3c5e164f87e10857c2e0e0f305`,
+              pinata_api_key: `06cbb63b94cf005586fa`,
+              pinata_secret_api_key: `1c6b91636d9d58fafecd619b8b87d8261bf6ca347f16893ec9f21655f53acaf6`,
               "Content-Type": "multipart/form-data",
             },
           });
           // console.log(file.type());
           const ImgHash = `https://gateway.pinata.cloud/ipfs/${resFile.data.IpfsHash}`;
           console.log(ImgHash);
+          const fileType = file.type;
+          const fileName = file.name;
+          console.log(fileType);
+
           const signer = contract.connect(provider.getSigner());
-          console.log(signer.add(account, ImgHash));
+          console.log(signer.add(account, ImgHash, fileType,fileName));
 
           //setUrlArr((prev) => [...prev, ImgHash]);
 
