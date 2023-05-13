@@ -3,11 +3,6 @@ import "./Display.css";
 
 const Display = ({ contract, account }) => {
   const [data, setData] = useState("");
-<<<<<<< HEAD
-  const getdata = async () => {
-    let dataArray = [];
-=======
->>>>>>> eda6023bb9eb2f2d8a92c70e5cfcb46007a554b0
   
 
   const getdata = async () => {
@@ -48,7 +43,9 @@ const Display = ({ contract, account }) => {
 
   return (
     <>
+      <h2 className="header">No One Can See Except You!</h2>
       <div className="image-list">{data}</div>
+
       <input type="text" placeholder="Enter Address" className="address"></input>
 
       <button className="center button" onClick={getdata}>
@@ -60,4 +57,3 @@ const Display = ({ contract, account }) => {
 
 
 export default Display;
-
