@@ -9,7 +9,7 @@ async function main() {
     "https://eth-sepolia.g.alchemy.com/v2/demo"
   );
   const signer = new ethers.Wallet(
-    "5227c1ca0e347ba332c5fc12e2ac6621a2df7591ff77cbd2a967d32bc0034028",
+    "YOUR PRIVATE KEY OF METAMASK",
     provider
   ); // Replace with your own private key
   const connectedUpload = upload.connect(signer);
