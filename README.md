@@ -2,7 +2,7 @@
 To use our Blockchain-based Cloud File Sharing System, simply follow the installation instructions in the README file. Once set up, access the user-friendly interface to securely share, store, and manage files using blockchain's decentralized technology. Enjoy a seamless and transparent file sharing experience like never before!
 
 ## Some installments before we start
-### Meat Mask
+### Meta Mask
 Download  Meta Mask from https://metamask.io/ 
 <br>
 #### Steps:
@@ -70,7 +70,7 @@ Now everytime start project by runnning following commands
 ```
 npx hardhat run deployments/deploy.js --network sepolia
 ```
-After running this command you will get contract address copy and paste it in app.js where yout_contract_address written.
+After running this command you will get contract address copy and paste it in app.js where your_contract_address written.
 ```
 cd peer
 npm start
