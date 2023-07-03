@@ -7,6 +7,7 @@ intro to project
 Download  Meta Mask from https://metamask.io/
 ### Pinata (Decentralized storage)
 Download  Pinata from https://www.pinata.cloud/
+<br>
 ####Steps:
 *sign-in
 *
