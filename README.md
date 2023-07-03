@@ -1,5 +1,5 @@
 # File Securita
-intro to project
+To use our Blockchain-based Cloud File Sharing System, simply follow the installation instructions in the README file. Once set up, access the user-friendly interface to securely share, store, and manage files using blockchain's decentralized technology. Enjoy a seamless and transparent file sharing experience like never before!
 
 ## Some installments before we start
 ### Meat Mask
