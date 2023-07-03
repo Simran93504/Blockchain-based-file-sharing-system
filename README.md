@@ -9,8 +9,8 @@ Download  Meta Mask from https://metamask.io/
 * Create Account
 * Copy your account private key and paste it in "deploy.js".
 * Add network sepolia by following steps:
-* Go to this link and click the checkbox "testhttps://chainlist.org/?chain=11155111&testnets=true&search=sepolia+
-* Add seploia and switch to sepolia
+* Go to this link "testhttps://chainlist.org/?chain=11155111&testnets=true&search=sepolia+" and click the checkbox to add Sepolia network.
+* Add seploia and switch to Sepolia
 ### Pinata (Decentralized storage)
 Download  Pinata from https://www.pinata.cloud/
 <br>
@@ -29,7 +29,8 @@ Download  Node.js from https://nodejs.org/en
 ### Go to terminal
 #### Run following Commands one-by-one:
 ```
-npm --version ```
+npm --version
+```
 If npm not exists install it by
 ```
 pip install npm
