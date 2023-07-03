@@ -1,10 +1,13 @@
-# Sample Hardhat Project
 # File Securita
 intro to project
 
 ## some installments before we start
 ### Meat Mask
-Download  Meta Mask from https://metamask.io/
+Download  Meta Mask from https://metamask.io/ 
+<br>
+#### Steps:
+* Create Account
+* Copy your account private key and paste it in "deploy.js".
 ### Pinata (Decentralized storage)
 Download  Pinata from https://www.pinata.cloud/
 <br>
@@ -12,9 +15,12 @@ Download  Pinata from https://www.pinata.cloud/
 * Sign-in to pinata
 * Click on "API Key" in the navbar
 * Click on "New API key" You will get..
-  ![image](https://github.com/komal5689/Blockchain-based-file-sharing-system/assets/109617644/e700d883-daa0-4c5c-9149-371849e6eaf1)
+  ![WhatsApp Image 2023-07-03 at 14 55 31](https://github.com/komal5689/Blockchain-based-file-sharing-system/assets/109617644/16107357-3dbb-4c27-8591-d99e71b5fa4a)
   *Enable all the option while you see in creating API key.
   ![WhatsApp Image 2023-07-03 at 14 52 11](https://github.com/komal5689/Blockchain-based-file-sharing-system/assets/109617644/d4e76775-dcf5-4371-b206-0db88695bab2)
+  * Copy and paste your Api-key and API secret Key in * FileUpload.js *.
+    ![image](https://github.com/komal5689/Blockchain-based-file-sharing-system/assets/109617644/933ae2aa-8445-4913-bd8e-3229ec49c32d)
+
 
 
 ### Node.js
