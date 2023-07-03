@@ -13,6 +13,9 @@ Download  Pinata from https://www.pinata.cloud/
 * Click on "API Key" in the navbar
 * Click on "New API key" You will get..
   ![image](https://github.com/komal5689/Blockchain-based-file-sharing-system/assets/109617644/e700d883-daa0-4c5c-9149-371849e6eaf1)
+  *Enable all the option while you see in creating API key.
+  ![WhatsApp Image 2023-07-03 at 14 52 11](https://github.com/komal5689/Blockchain-based-file-sharing-system/assets/109617644/d4e76775-dcf5-4371-b206-0db88695bab2)
+
 
 ### Node.js
 Download  Node.js from https://nodejs.org/en
