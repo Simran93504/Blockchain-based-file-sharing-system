@@ -35,7 +35,7 @@ If npm not exists install it by
 ```
 pip install npm
 ```
-check if node.js is installed properly
+Check if node.js is installed properly
 ```
 node -v 
 ```
@@ -48,7 +48,7 @@ npm i tar
 npm run build
 react -v
 ```
-if react doesnt exist install it from
+If react doesnt exist install it from
 ```
 pip install react
 npm install  create-react-app
@@ -66,15 +66,14 @@ npx hardhat node
 
 
 ```
-now everytime start project by runnning following commands
+Now everytime start project by runnning following commands
 ```
 npx hardhat run deployments/deploy.js --network sepolia
 ```
-after running this command you will get contract address copy and paste it in app.js where yout_contract_address written.
-
+After running this command you will get contract address copy and paste it in app.js where yout_contract_address written.
 ```
 cd peer
 npm start
 ```
 ### Further Steps
-feel free to fork repository and contribute new features .
+Feel free to fork Repository and contribute new features.
