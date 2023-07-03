@@ -8,9 +8,12 @@ Download  Meta Mask from https://metamask.io/
 ### Pinata (Decentralized storage)
 Download  Pinata from https://www.pinata.cloud/
 <br>
-####Steps:
-*sign-in
-*
+#### Steps:
+* Sign-in to pinata
+* Click on "API Key" in the navbar
+* Click on "New API key" You will get..
+  ![image](https://github.com/komal5689/Blockchain-based-file-sharing-system/assets/109617644/e700d883-daa0-4c5c-9149-371849e6eaf1)
+
 ### Node.js
 Download  Node.js from https://nodejs.org/en
 ### 
